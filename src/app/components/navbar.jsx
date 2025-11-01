@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import ToggleButton from "./UI/toggle";
+import Button from "./UI/button";
 
 const Navbar = () => {
   const navLinks = [
@@ -9,11 +10,11 @@ const Navbar = () => {
       name: "Home",
       to: "/",
     },
-    { name: "About us", to: "/about" },
-    { name: "For students", to: "/students" },
-    { name: "Universities", to: "/universities" },
-    { name: "Why us", to: "/why" },
-    { name: "Testimony", to: "/testimony" },
+    { name: "About us", to: "#about" },
+    { name: "For students", to: "#students" },
+    { name: "Universities", to: "#universities" },
+    { name: "Why us", to: "#why" },
+    { name: "Testimony", to: "#testimony" },
   ];
   return (
     <>
@@ -37,13 +38,7 @@ const Navbar = () => {
             ))}
           </div>
           <div className="flex gap-10 items-center">
-            <Link
-              href="/contact"
-              className="rounded-2xl border-2 border-[#FF9463] text-[#FF9463] px-4 py-1 flex items-center"
-            >
-              <Image src="/icons/Union.svg" alt="" width={20} height={20} />
-              Contact
-            </Link>
+            <Button href={"/contact"}>Contact</Button>
             <ToggleButton />
           </div>
         </div>
