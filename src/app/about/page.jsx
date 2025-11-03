@@ -10,7 +10,10 @@ const About = () => {
           <Button href="/founders">FOUNDER'S</Button>
         </div>
 
-        <section id="about" className="  grid grid-cols-2 max-w-7xl mx-auto">
+        <section
+          id="about"
+          className="  grid md:grid-cols-2 max-w-5xl pb-10 mx-auto"
+        >
           <div className="space-y-3 items-center flex flex-col justify-start pt-20">
             <Image
               src="/images/profile.png"
@@ -24,9 +27,11 @@ const About = () => {
             <p>FOUNDER</p>
           </div>
           <div>
-            <h1 className="font-bold text-xl mb-10">Meet Stephen Precious</h1>
+            <h1 className="font-bold text-xl mb-10 hidden md:block">
+              Meet Stephen Precious
+            </h1>
 
-            <div className="text-center space-y-6">
+            <div className="text-center space-y-6 my-5 md:my-0">
               <div className="font-semibold">
                 Stephen Precious is a Computer Science student at Kwara State
                 University and the founder of ThynkSafe, a mental support

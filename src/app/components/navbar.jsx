@@ -18,8 +18,8 @@ const Navbar = () => {
   ];
   return (
     <>
-      <nav>
-        <div className="bg-white p-3 flex justify-around items-center">
+      <nav className="">
+        <div className="bg-white px-3 pt-7 pb-4 flex justify-around items-center border-b">
           <Image
             src="/images/thynksafe.png"
             alt="Thynksafe logo"
