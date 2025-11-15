@@ -6,7 +6,7 @@ import { FaArrowDownLong } from "react-icons/fa6";
 
 const HeroSection = () => {
   return (
-    <div className="bg-white flex flex-col justify-center pt-10 min-h-[850px]">
+    <div className="bg-white flex flex-col justify-center md:pt-20 pt-10 min-h-[850px]">
       <section className="relative overflow-hidden px-6 md:px-12 lg:px-20 flex items-center">
         <div className="max-w-[1400px] mx-auto w-full flex flex-col md:flex-row md:items-center justify-between gap-10 pt-24 md:pt-0">
           {/* LEFT SIDE */}

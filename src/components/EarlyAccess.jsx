@@ -41,8 +41,6 @@ export default function EarlyAccess() {
         throw new Error("Failed to submit");
       }
 
-      console.log(res);
-
       if (res.status === 200) {
         toast.success("You're on the waitlist! 🎉🥰");
         setForm({ firstName: "", lastName: "", email: "" });
